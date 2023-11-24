@@ -4,11 +4,13 @@ from PIL import ImageTk, Image
 
 root = Tk()
 root.title("Simple calculator")
+# root.iconbitmap("/home/filip/Downloads/calculator-outline-filled/16x16.png")
 icon = PhotoImage(file="/home/filip/Downloads/calculator-outline-filled/16x16.png")
 root.iconphoto(True, icon)
 
 my_img = ImageTk.PhotoImage(Image.open("FC_barca_logo.jpg"))
-
+my_label = Label(image=my_img)
+my_label.pack()
 
 
 
